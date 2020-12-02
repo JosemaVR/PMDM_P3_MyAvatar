@@ -1,6 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">My Avatar</string>
     <string name="crear">Crear Avatar</string>
+    <string name="cerrar">Volver a inicio</string>
 
     <string name="hombre">Hombre</string>
     <string name="mujer">Mujer</string>
@@ -22,9 +23,9 @@
     <string name="velocidad">Velocidad</string>
     <string name="nombre">Nombre</string>
 
-    <string name="tipo">Especie - Sexo - Profesion</string>
+    <string name="tipo" tools:ignore="Typos">Especie - Sexo - Profesion</string>
 
-    <string name="descripcionImgProfesion">Profesion del avatar</string>
+    <string name="descripcionImgProfesion" tools:ignore="Typos">Profesion del avatar</string>
     <string name="descripcionImgEspecie">Especie del avatar</string>
 
 </resources>

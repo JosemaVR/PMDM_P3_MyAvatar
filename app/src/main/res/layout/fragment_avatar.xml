@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_esdla_anillo_negro"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:text="@string/nombre"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgProfesion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:contentDescription="@string/descripcionImgProfesion"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblNombre"
+        tools:srcCompat="@drawable/ic_espada" />
+
+    <ImageView
+        android:id="@+id/imgEspecie"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_magia"
+        android:contentDescription="@string/descripcionImgEspecie" />
+
+    <TextView
+        android:id="@+id/lblVida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/vida"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lblNombre"
+        app:layout_constraintTop_toBottomOf="@+id/imgEspecie" />
+
+    <TextView
+        android:id="@+id/lblFuerza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/fuerza"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lblVida"
+        app:layout_constraintTop_toBottomOf="@+id/lblVida" />
+
+    <TextView
+        android:id="@+id/lblMagia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/magia"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lblVida"
+        app:layout_constraintTop_toBottomOf="@+id/lblFuerza" />
+
+    <TextView
+        android:id="@+id/lblVelocidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/velocidad"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lblVida"
+        app:layout_constraintTop_toBottomOf="@+id/lblMagia" />
+
+    <ProgressBar
+        android:id="@+id/progressBarVida"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblVida"
+        app:layout_constraintStart_toEndOf="@+id/lblVelocidad"
+        app:layout_constraintTop_toTopOf="@+id/lblVida" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFuerza"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/lblFuerza"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarVida"
+        app:layout_constraintStart_toStartOf="@+id/progressBarVida"
+        app:layout_constraintTop_toTopOf="@+id/lblFuerza"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMagia"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/lblMagia"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarFuerza"
+        app:layout_constraintStart_toStartOf="@+id/progressBarFuerza"
+        app:layout_constraintTop_toTopOf="@+id/lblMagia"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBarVelocidad"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/lblVelocidad"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarMagia"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMagia"
+        app:layout_constraintTop_toTopOf="@+id/lblVelocidad"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblVidaRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarVida"
+        app:layout_constraintStart_toEndOf="@+id/progressBarVida"
+        app:layout_constraintTop_toTopOf="@+id/progressBarVida" />
+
+    <TextView
+        android:id="@+id/lblFuerzaRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarFuerza"
+        app:layout_constraintStart_toStartOf="@+id/lblVidaRes"
+        app:layout_constraintTop_toTopOf="@+id/progressBarFuerza"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblMagiaRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarMagia"
+        app:layout_constraintStart_toStartOf="@+id/lblFuerzaRes"
+        app:layout_constraintTop_toTopOf="@+id/progressBarMagia"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblVelocidadRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarVelocidad"
+        app:layout_constraintStart_toStartOf="@+id/lblMagiaRes"
+        app:layout_constraintTop_toTopOf="@+id/progressBarVelocidad"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tipo"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/lblNombre"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_clear_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
