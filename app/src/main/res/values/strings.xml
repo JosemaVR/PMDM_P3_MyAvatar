@@ -27,5 +27,6 @@
 
     <string name="descripcionImgProfesion" tools:ignore="Typos">Profesion del avatar</string>
     <string name="descripcionImgEspecie">Especie del avatar</string>
+    <string name="input_nombre">Introduzca un nombre</string>
 
 </resources>

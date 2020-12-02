@@ -126,15 +126,15 @@ public class Mostrar extends Fragment {
         pgVida.setProgress(vida);
         pgVida.getProgressDrawable().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
 
-        pgFuerza.setMax(100);
+        pgFuerza.setMax(20);
         pgFuerza.setProgress(fuerza);
         pgFuerza.getProgressDrawable().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
 
-        pgMagia.setMax(100);
+        pgMagia.setMax(10);
         pgMagia.setProgress(magia);
         pgMagia.getProgressDrawable().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
 
-        pgVelocidad.setMax(100);
+        pgVelocidad.setMax(5);
         pgVelocidad.setProgress(velocidad);
         pgVelocidad.getProgressDrawable().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
 

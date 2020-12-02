@@ -19,11 +19,11 @@ public class Avatar {
         Random r = new Random();
         int vid = (int) (r.nextDouble()*100);
         this.vida = vid;
-        int mag = (int) (r.nextDouble()*100);
+        int mag = (int) (r.nextDouble()*10);
         this.magia = mag;
-        int fue = (int) (r.nextDouble()*100);
+        int fue = (int) (r.nextDouble()*20);
         this.fuerza = fue;
-        int vel = (int) (r.nextDouble()*100);
+        int vel = (int) (r.nextDouble()*5);
         this.velocidad = vel;
     }
 

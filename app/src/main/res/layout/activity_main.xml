@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/btnCrear"
-        android:layout_width="170dp"
-        android:layout_height="78dp"
+        android:layout_width="166dp"
+        android:layout_height="167dp"
         android:text="@string/crear"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:backgroundTint="@color/cardview_shadow_end_color"
