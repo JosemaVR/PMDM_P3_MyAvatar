@@ -39,7 +39,7 @@ public class DialogoNombre extends DialogFragment {
                         EditText edit = vista.findViewById(R.id.txtNombre);
                         String nombre = edit.getText().toString();
                         avatar.setNombre(nombre);
-                        if(avatar.getNombre()==""){
+                        if(avatar.getNombre().equals("")){
                             dialog.dismiss();
                             mListener.siguiente("nombre");
                         } else {

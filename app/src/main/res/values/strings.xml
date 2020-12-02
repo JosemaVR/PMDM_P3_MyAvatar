@@ -21,4 +21,10 @@
     <string name="fuerza">Fuerza</string>
     <string name="velocidad">Velocidad</string>
     <string name="nombre">Nombre</string>
+
+    <string name="tipo">Especie - Sexo - Profesion</string>
+
+    <string name="descripcionImgProfesion">Profesion del avatar</string>
+    <string name="descripcionImgEspecie">Especie del avatar</string>
+
 </resources>
