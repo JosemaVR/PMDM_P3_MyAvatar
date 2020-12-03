@@ -31,6 +31,7 @@ public class Mostrar extends Fragment {
     public void onViewCreated(View v, Bundle b){
         Bundle datosRecuperados = getArguments();
 
+        assert datosRecuperados != null;
         nombre = datosRecuperados.getString("nombre");
         sexo = datosRecuperados.getString("sexo");
         especie = datosRecuperados.getString("especie");
@@ -117,9 +118,7 @@ public class Mostrar extends Fragment {
 
     @SuppressLint("SetTextI18n")
     private void hacerVisible() {
-
         lblNombre.setText(nombre);
-
         lblTipo.setText(especie + " - " + sexo + " - " + profesion);
 
         pgVida.setMax(100);

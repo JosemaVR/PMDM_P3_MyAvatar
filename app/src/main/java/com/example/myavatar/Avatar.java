@@ -1,10 +1,6 @@
 package com.example.myavatar;
 
-import android.widget.Toast;
-
 import java.util.Random;
-
-import static com.example.myavatar.R.layout.activity_main;
 
 public class Avatar {
 
@@ -17,14 +13,10 @@ public class Avatar {
         this.especie = "";
         this.profesion = "";
         Random r = new Random();
-        int vid = (int) (r.nextDouble()*100);
-        this.vida = vid;
-        int mag = (int) (r.nextDouble()*10);
-        this.magia = mag;
-        int fue = (int) (r.nextDouble()*20);
-        this.fuerza = fue;
-        int vel = (int) (r.nextDouble()*5);
-        this.velocidad = vel;
+        this.vida = (int) (r.nextDouble()*100);
+        this.magia = (int) (r.nextDouble()*10);
+        this.fuerza = (int) (r.nextDouble()*20);
+        this.velocidad = (int) (r.nextDouble()*5);
     }
 
     public String getNombre() {

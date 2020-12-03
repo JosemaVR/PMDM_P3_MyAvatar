@@ -1,16 +1,11 @@
 package com.example.myavatar;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
-import android.graphics.LightingColorFilter;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -25,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Fragment mostrar;
     FragmentTransaction ft;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @SuppressLint("ResourceAsColor")
     @Override
     public void siguiente(String dialogo) {
         switch (dialogo) {
