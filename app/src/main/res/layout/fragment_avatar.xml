@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:scrollbarThumbHorizontal="@color/white"
         android:text="@string/nombre"
         android:textColor="@color/white"
